@@ -9,10 +9,12 @@
 <iframe src="https://firegamesite.com/" style="width: 100%; height: 100%; border: none" />
 
 <script>
-	window.addEventListener('beforeunload', (event) => {
-		(event || window.event).returnValue = "Tab is attempting to close. Please ensure you wanted to leave the site."
-		return "Tab is attempting to close. Please ensure you wanted to leave the site."
-	})
+    window.onload(() => {
+	    window.addEventListener('beforeunload', (event) => {
+		    (event || window.event).returnValue = "Tab is attempting to close. Please ensure you wanted to leave the site."
+		    return "Tab is attempting to close. Please ensure you wanted to leave the site."
+	    })
+    })
 </script>
 </body>
 </html>
