@@ -10,7 +10,8 @@
 
 <script>
 	window.addEventListener('beforeunload', (event) => {
-		event.returnValue = "Tab is attempting to close. Are you sure you want to leave?"
+		(event || window.event).returnValue = "Tab is attempting to close. Please ensure you wanted to leave the site."
+		return "Tab is attempting to close. Please ensure you wanted to leave the site."
 	})
 </script>
 </body>
