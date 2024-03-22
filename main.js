@@ -8,3 +8,4 @@ app.get('/', (req, res) => {
 })
 
 app.listen(10000)
+console.log(`Server running on port 10000`)
