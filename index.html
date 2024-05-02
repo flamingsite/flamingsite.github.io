@@ -33,10 +33,9 @@
 	const analytics = getAnalytics(app);
 
 	// Add an event listener for the forward slash key
-	document.addEventListener('onkeydown', function(event) {
+	document.addEventListener('onkeydown', event => {
 	  if (event.code === 'Slash') {
 		  window.location.href = 'https://docs.google.com/';
-		}
 	  }
 	})
 </script>
