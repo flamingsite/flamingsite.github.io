@@ -31,6 +31,14 @@
 	// Initialize Firebase
 	const app = initializeApp(firebaseConfig);
 	const analytics = getAnalytics(app);
+
+	// Add an event listener for the forward slash key
+	document.addEventListener('keydown', function(event) {
+	  if (event.key === '/') {
+		  window.location.href = 'https://docs.google.com/';
+		}
+	  }
+	})
 </script>
 </body>
 </html>
